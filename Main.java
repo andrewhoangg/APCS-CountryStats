@@ -28,6 +28,14 @@ public class Main {
     }
 
     public static String countryWithHighestPopulationDensity(String[] countries, int[] population, int[] area) {
+        /*
+            1. Population Density of a country is population / area
+            2. loop through the countries, grab the index of the population & area
+            3. divide the population & area at the same index
+            4. store in a number array and find the largest value in that array
+            5. grab the index of the number and use it to return the country
+        */
+
         int[] list = new int[countries.length];
 
         int index=0;
